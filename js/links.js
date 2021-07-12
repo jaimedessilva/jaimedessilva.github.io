@@ -1,3 +1,9 @@
+/**
+ * Projeto Portifolio
+ * Author: Jaime Dev
+ * Repo: https://github.com/jaimedessilva/get-api
+ */
+ 
 let listLinksServ = []
 let listLinks = []
 let listLinksContatos = []
@@ -9,10 +15,10 @@ const getLinks = () => {
     listLinks.push(new Url("https://app-sgveiculos.herokuapp.com/", "SG Veiculos (Java)", './images/sg_veiculos.png'))
     listLinks.push(new Url("https://urna-eletronica.netlify.app/", "Urna eletronica (JS)", './images/urna_eletronica.png'))
     listLinks.push(new Url("http://open-movie.netlify.app/", "OpenMovie (JS)", './images/ssj_filmes.png'))
-    listLinks.push(new Url("/pokemon/index.html", "Pokemon Api", './images/poke_api.jpg'))
+    listLinks.push(new Url("https://getapi.netlify.app/pages/pokemon.html", "Pokemon Api", './images/poke_api.jpg'))
     listLinks.push(new Url("https://app-login-security.herokuapp.com/", "Login Spring Security", "./images/springSecurity.jpg"))
-    listLinks.push(new Url("https://getapi/", "GET APIS",))
-    listLinks.push(new Url("https://shero/api", "S-Hero",))
+    listLinks.push(new Url("https://getapi.netlify.app/", "GET APIS","./images/getapi.jpg"))
+    listLinks.push(new Url("https://getapi.netlify.app/pages/superhero.html", "S.Hero", "./images/superhero.jpg"))
 
     return listLinks
 }

@@ -190,6 +190,8 @@ p {
 .card:hover {
   box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.3);
 }
+.card a {text-decoration: none;}
+.card a:hover {color: red;}
 .parallax {
   background-image: url("../images/naom_5bebe479d234a.jpg");
   background-position: center top;

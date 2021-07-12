@@ -1,3 +1,9 @@
+/**
+ * Projeto Portifolio
+ * Author: Jaime Dev
+ * Repo: https://github.com/jaimedessilva
+ */
+ 
 const li = document.querySelector('.gallery')
 const lk = document.querySelector('.lk')
 const cards = document.querySelector('.cards')
@@ -11,17 +17,8 @@ const list = []
 let html = ''
 
 
-//Script Menu
-/* const myFunction = () => {
-   let x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-          x.className += " responsive";
-      } else {
-          x.className = "topnav";
-      }
-} */
- //Menu
-        
+
+//Menu Responsive     
 const responsiveMenu = () => {
   if(menu.style.display == 'block'){
       menu.style.display = 'none'
@@ -40,7 +37,7 @@ for (let link of getLinks()) {
    html += `${link.img}`
    html += `</div>`
    html += `<h3>${link.title}</h3>`
-   html += `<p><a href="${link.url}">${link.url}</a></p>`
+   html += `<p><a href="${link.url}" alt="${link.title}">Link de Acesso</a></p>`
    html += `</div></div>`
 }
 cards.innerHTML = html
@@ -68,7 +65,7 @@ lk.innerHTML = link;
 
 //About
 (sobre = () => {
-   avatar.innerHTML = `<img src="./images/foto-jaime.jpg" alt="foto">`
+   avatar.innerHTML = `<img src="./images/avatar.jpg" alt="foto-autor">`
    about.innerHTML = `<h4 class="text-left">Sobre</h4><i>Sou Jaime</i>, 
 formado em Analise e Desenvolvimento de Sistemas e apaixonado por tecnologia. 
 Desenvolvi esse portfólio com o intuito de demonstrar alguns dos projetos que eu já desenvolvi e os que eu vier a

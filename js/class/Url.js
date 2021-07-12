@@ -1,3 +1,4 @@
+/** Projeto Portifolio Classe Modelo Url */
 class Url {
     constructor(url, title, thumb, description) {
         this.url = url
