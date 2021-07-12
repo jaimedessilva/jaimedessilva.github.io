@@ -275,4 +275,7 @@ body {
       background-attachment: fixed !important;
       background-size: cover;
     }
+    .content-site {
+      background-image: url('../images/12490.jpg');
+    }
 }
