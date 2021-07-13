@@ -15,4 +15,4 @@
 
 ### Finalidade: Portifolio com os projetos desenvolvidos, afim de ilustrar conhecimentos em tecnologias
 
-### Estatus: Em evolução
+### Status: Em evolução
