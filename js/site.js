@@ -47,7 +47,8 @@ list = getLinkServicos()
 let link = ''
 for (let href of list) {
    link += '<li>'
-   link += href.link
+   /* link += `<img src="${href.thumb}" style="width: 40px">` */
+   link += href.link 
    link += '</li>'
 }
 lk.innerHTML = link;

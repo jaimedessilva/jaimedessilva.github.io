@@ -8,12 +8,12 @@ const getLinkServicos = () => {
     //links dos Serviços    
     let list = []
     
-    list.push(new Url("https://github.com/", "GitHub"))
-    list.push(new Url("https://www.netlify.com/", "Netlify"))
-    list.push(new Url("https://www.heroku.com/", "Heroku Cloud"))
-    list.push(new Url("https://www.themoviedb.org/", "TMDB Api"))
-    list.push(new Url("https://superheroapi.com/", "Super Hero Api"))
-    list.push(new Url("https://developer.marvel.com/", "Marvel API"))
+    list.push(new Url("https://github.com/", "GitHub","../icons/github-brands.svg"))
+    list.push(new Url("https://www.netlify.com/", "Netlify", "../icons/netlify-icon.svg"))
+    list.push(new Url("https://www.heroku.com/", "Heroku Cloud", "../icons/heroku-icon.svg"))
+    list.push(new Url("https://www.themoviedb.org/", "TMDB Api","../icons/server-solid.svg"))
+    list.push(new Url("https://superheroapi.com/", "Super Hero Api", "../icons/server-solid.svg"))
+    list.push(new Url("https://developer.marvel.com/", "Marvel API","../icons/laptop-solid.svg"))
     
     return list
 }
