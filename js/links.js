@@ -1,27 +1,8 @@
 /**
  * Projeto Portifolio
  * Author: Jaime Dev
- * Repo: https://github.com/jaimedessilva/get-api
+ * Repo: https://github.com/jaimedessilva
  */
- 
-let listLinksServ = []
-let listLinks = []
-let listLinksContatos = []
-
-const getLinks = () => {
-    
-    //Links Portifolio
-   
-    listLinks.push(new Url("https://app-sgveiculos.herokuapp.com/", "SG Veiculos (Java)", './images/sg_veiculos.png'))
-    listLinks.push(new Url("https://urna-eletronica.netlify.app/", "Urna eletronica (JS)", './images/urna_eletronica.png'))
-    listLinks.push(new Url("http://open-movie.netlify.app/", "OpenMovie (JS)", './images/ssj_filmes.png'))
-    listLinks.push(new Url("https://getapi.netlify.app/pages/pokemon.html", "Pokemon Api", './images/poke_api.jpg'))
-    listLinks.push(new Url("https://app-login-security.herokuapp.com/", "Login Spring Security", "./images/springSecurity.jpg"))
-    listLinks.push(new Url("https://getapi.netlify.app/", "GET APIS","./images/getapi.jpg"))
-    listLinks.push(new Url("https://getapi.netlify.app/pages/superhero.html", "S.Hero", "./images/superhero.jpg"))
-
-    return listLinks
-}
 
 const getLinkServicos = () => {
     //links dos Serviços    
@@ -33,13 +14,13 @@ const getLinkServicos = () => {
     list.push(new Url("https://www.themoviedb.org/", "TMDB Api"))
     list.push(new Url("https://superheroapi.com/", "Super Hero Api"))
     list.push(new Url("https://developer.marvel.com/", "Marvel API"))
-      
-    listLinksServ = list
-
-    return listLinksServ
+    
+    return list
 }
 //List Links Rodapé
 const getLinksContatos = () => {
+    
+    let listLinksContatos = []
     
     listLinksContatos.push({ url: "https://github.com/jaimedessilva", title: "GitHub", class: "fa fa-github"})
     listLinksContatos.push({ url: "http://api.whatsapp.com/send?1=pt_BR&phone=5561995411760", title: "Whatsapp", class: "fa fa-whatsapp"})
@@ -51,5 +32,4 @@ const getLinksContatos = () => {
     listLinksContatos.push({ url: "#android", title: "Android", class: "fa fa-android"})
     
     return listLinksContatos
-
 }

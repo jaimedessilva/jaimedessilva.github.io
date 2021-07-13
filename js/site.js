@@ -12,11 +12,9 @@ const about = document.querySelector('.about')
 const linksContato = document.querySelector('.links-contato')
 const avatar = document.querySelector('.avatar')
 const menu = document.querySelector('.menu-ul')
-const list = []
+let list = []
 
 let html = ''
-
-
 
 //Menu Responsive     
 const responsiveMenu = () => {
@@ -28,23 +26,26 @@ const responsiveMenu = () => {
    }
 }
 
-//Links Portifolio
-for (let link of getLinks()) {
-
-   html += `<div class="card">`
-   html += `<div class="card-img">`
-   html += `<div class="card-text">`
-   html += `${link.img}`
-   html += `</div>`
-   html += `<h3>${link.title}</h3>`
-   html += `<p><a href="${link.url}" alt="${link.title}">Link de Acesso</a></p>`
-   html += `</div></div>`
-}
+   list = getCardLinks()
+   for(let link of list){
+         html += `<div class="card">`
+         html += `<div class="card-img">`
+         html += `<div class="card-text">`
+         html += `<img src="${link.thumb}" alt="${link.title}" class="img-size"/>`
+         html += `</div>`
+         html += `<h3>${link.title}</h3>`
+         html += `<p><a href="${link.url}" alt="${link.title}">Link de Acesso</a></p>`
+         html += `<div class="ic">`
+         link.icon.forEach(img => html += `<img src="${img.url}"/>`)
+         html += `</div></div></div>`   
+      }
 cards.innerHTML = html
 
+
 //Links de Tecnologias
+list = getLinkServicos()
 let link = ''
-for (let href of getLinkServicos()) {
+for (let href of list) {
    link += '<li>'
    link += href.link
    link += '</li>'
@@ -77,8 +78,9 @@ desenvolvimento Web com Tecnologias modernas tais como HTML5, CSS, Javascript ES
 
 //Links de contato
 (contatos = () => {
-   html = ''                 
-   for(link of getLinksContatos()){
+   html = ''
+   list = getLinksContatos()
+   for(link of list){
       html += `<a href="${link.url}" class="${link.class}"></a>`
    }
    linksContato.innerHTML = html   
