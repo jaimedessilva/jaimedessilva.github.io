@@ -1,5 +1,5 @@
 /**
- * Projeto Portifolio
+ * Projeto Portfolio
  * Author: Jaime Dev
  * Repo: https://github.com/jaimedessilva
  */
@@ -22,7 +22,7 @@ const getLinksContatos = () => {
     
     let listLinksContatos = []
     
-    listLinksContatos.push({ url: "https://github.com/jaimedessilva", title: "GitHub", class: "fa fa-github"})
+    listLinksContatos.push({ url: "https://github.com/jaimedessilva/jaimedessilva.github.io", title: "GitHub", class: "fa fa-github"})
     listLinksContatos.push({ url: "http://api.whatsapp.com/send?1=pt_BR&phone=5561995411760", title: "Whatsapp", class: "fa fa-whatsapp"})
     listLinksContatos.push({ url: "https://www.linkedin.com/in/jaimedessilva/", title: "Linkedin", class: "fa fa-linkedin"})
     listLinksContatos.push({ url: "https://www.youtube.com/channel/UCcPgsJPn7K4LxdRnOWunfPQ", title: "Youtube", class: "fa fa-youtube"})

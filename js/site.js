@@ -1,9 +1,9 @@
 /**
- * Projeto Portifolio
+ * Projeto Portfolio
  * Author: Jaime Dev
  * Repo: https://github.com/jaimedessilva
  */
- 
+
 const li = document.querySelector('.gallery')
 const lk = document.querySelector('.lk')
 const cards = document.querySelector('.cards')
@@ -18,27 +18,27 @@ let html = ''
 
 //Menu Responsive     
 const responsiveMenu = () => {
-  if(menu.style.display == 'block'){
+   if (menu.style.display == 'block') {
       menu.style.display = 'none'
-  }
-  else {
+   }
+   else {
       menu.style.display = 'block'
    }
 }
 
-   list = getCardLinks()
-   for(let link of list){
-         html += `<div class="card">`
-         html += `<div class="card-img">`
-         html += `<div class="card-text">`
-         html += `<img src="${link.thumb}" alt="${link.title}" class="img-size"/>`
-         html += `</div>`
-         html += `<h3>${link.title}</h3>`
-         html += `<p><a href="${link.url}" alt="${link.title}">Link de Acesso</a></p>`
-         html += `<div class="ic">`
-         link.icon.forEach(img => html += `<img src="${img.url}"/>`)
-         html += `</div></div></div>`   
-      }
+list = getCardLinks()
+for (let link of list) {
+   html += `<div class="card">`
+   html += `<div class="card-img">`
+   html += `<div class="card-text">`
+   html += `<img src="${link.thumb}" alt="${link.title}" class="img-size"/>`
+   html += `</div>`
+   html += `<h3>${link.title}</h3>`
+   html += `<p><a href="${link.url}" alt="${link.title}">Link de Acesso</a></p>`
+   html += `<div class="ic">`
+   link.icon.forEach(img => html += `<img src="${img.url}"/>`)
+   html += `</div></div></div>`
+}
 cards.innerHTML = html
 
 
@@ -48,7 +48,7 @@ let link = ''
 for (let href of list) {
    link += '<li>'
    /* link += `<img src="${href.thumb}" style="width: 40px">` */
-   link += href.link 
+   link += href.link
    link += '</li>'
 }
 lk.innerHTML = link;
@@ -81,8 +81,8 @@ desenvolvimento Web com Tecnologias modernas tais como HTML5, CSS, Javascript ES
 (contatos = () => {
    html = ''
    list = getLinksContatos()
-   for(link of list){
+   for (link of list) {
       html += `<a href="${link.url}" class="${link.class}"></a>`
    }
-   linksContato.innerHTML = html   
+   linksContato.innerHTML = html
 })()
