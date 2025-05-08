@@ -1,0 +1,116 @@
+[
+  {
+      "url": "https://github.com/jaimedessilva/sgVeiculos",
+      "title": "SG Veiculos",
+      "thumb": "./images/sg_veiculos.png",
+      "description":"Sistema para gestão veicular de locadora",
+      "icon": [
+          {
+              "url": "./icons/java.svg"
+          },
+          {
+              "url": "./icons/spring-3.svg"
+          },
+          {
+              "url": "./icons/html5color.svg"
+          },
+          {
+              "url": "../icons/postgsql.svg"
+          }
+      ]
+  },
+  {
+      "url": "https://github.com/jaimedessilva/AppBK-api",
+      "title": "App.BK",
+      "description":"Api que simula um Banco acesso via Swagger",
+      "thumb": "./images/api-bk.jpg",
+      "icon": [
+          {
+              "url": "./icons/java.svg"
+          },
+          {
+              "url": "../icons/spring-3.svg"
+          },
+          {
+              "url": "../icons/swagger.svg"
+          },
+          {
+              "url": "../icons/javascript.svg"
+          }
+      ]
+  },
+  {
+      "url": "https://urna-eletronica.netlify.app",
+      "title": "Urna eletronica",
+      "thumb": "./images/urna_eletronica.png",
+      "description":"Projetinho de Urna Eletronica com personagens ficticios",
+      "icon": [
+          {
+              "url": "../icons/javascript.svg"
+          },
+          {
+              "url": "../icons/html5color.svg"
+          },
+          {
+              "url": "../icons/css3color.svg"
+          }
+      ]
+  },
+  {
+      "url": "http://open-movie.netlify.app",
+      "title": "OpenMovie",
+      "description":"Consumo de Api TMDB de filmes",
+      "thumb": "./images/ssj_filmes.png",
+      "icon": [
+          {
+              "url": "../icons/javascript.svg"
+          },
+          {
+              "url": "../icons/html5color.svg"
+          },
+          {
+              "url": "../icons/css3color.svg"
+          }
+      ]
+  },
+  {
+      "url": "https://github.com/jaimedessilva/SpringSecurity",
+      "title": "Login Básico Spring Security",
+      "description":"Sistema de Login com Spring Security",
+      "thumb": "../images/springSecurity.jpg",
+      "icon": [
+          {
+              "url": "../icons/java.svg"
+          },
+          {
+              "url": "../icons/spring-3.svg"
+          }
+      ]
+  },
+  {
+      "url": "https://getapi.netlify.app/pages/superhero.html",
+      "title": "S.Hero",
+      "description":"Consumo de Api Super Hero, de personagens de Quadrinhos",
+      "thumb": "../images/superhero.jpg",
+      "icon": [
+          {
+              "url": "./icons/javascript.svg"
+          },
+          {
+              "url": "../icons/html5color.svg"
+          },
+          {
+              "url": "../icons/css3color.svg"
+          }
+      ]
+  },{
+    "url": "https://getapi.netlify.app/", 
+    "title": "GET APIS", 
+    "thumb": "./images/getapi.jpg",
+    "description":"Consumo de Apis diversas", 
+    "icon": [
+        { "url": "../icons/javascript.svg"},
+        { "url": "../icons/html5color.svg"},
+        { "url": "../icons/css3color.svg" }    
+]}
+]

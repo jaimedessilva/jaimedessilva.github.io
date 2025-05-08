@@ -3,158 +3,160 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>SSJ-Dev</title>
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./components/cards.css">
+
 </head>
+
 <body>
-    <section class="header-site">
-        <nav class="topnav">
-        <label class="responsive" onclick="responsiveMenu()" >
-         <i class="fa fa-bars ico-menu"></i></label>
-            <ul class="menu-ul">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#portifolio">Portfolio</a></li>
-                <li><a href="#links">Links</a></li>
-                <li><a href="#contatos">Contatos</a></li>
-            </ul>
-        </nav> 
-        </div>
-        <img src="./images/ssj-dev.png" alt="logo-ssj" class="logo" id="home">
-        <div class="container">
-            <div class="row">
-                <div class="col">
+    <nav><!--Responsive Menu-->
+        <!-- <img src="./images/ssj-dev.png" alt="logo-topo" /> -->
+        <label class="responsive">
+            <div class="mobile" onclick="responsiveMenu()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </label>
+        <ul class="menu-ul">
+            <li><a href="#" class="fechar" onclick="responsiveMenu()">X</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contato">Contatos</a></li>
+        </ul>
+        <!--<img src="./images/ssj-dev.png" style="float: left;" />
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#portfolio">Portfólios</a>
+        <a href="#skills">Skills</a>
+        <a href="#contato">Contato</a>-->
+    </nav>
 
-                    <h1 class="text-center">Bem Vindo</h1>
-                    <h2 class="text-center">Desenvolvimento com estilo: Javascript, Angular, CSS/Bootstrap, Java, PHP
-                    </h2>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="content-site" id="portifolio">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h1 class="text-center">Portfólio</h1>
-                        <p class="text-center">
-                            O Design é tão importante quanto a usabilidade de qualquer aplicação. 
-                            O que é agradável aos olhos atrai mais atenção de quem vai usá-lo.
-                        </p>
-                    </div>
-                    <div class="cards">
-                    <!--Card (JS)-->
-                    <div class="card">
-                            <div class="card-img">
-                                <div class="card-text">
-                                <img src="./images/default1.png" alt="" class="img-size">
-                                </div>
-                                <h3>Title</h3>
-                                <p>Resume...</p>
-                                <div class="ic">
-                                    <img src="./icons/java.svg"/>
-                                    <img src="./icons/spring-3.svg" />
-                                    <img src="./icons/html5color.svg" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <section class="parallax" id="links">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1 class="text-center">TECNOLOGIAS E SERVIÇOS USADOS PARA DESENVOLVER E MANTER ESSE PORTIFOLIO</h1>
-                    <div class="inner" style="text-align: center;">
-                        <ul class="lk">
-                            <!--Links (JS)-->
-                            <li><a href="#">Default</a></li>
-                            <li><a href="#">Default</a></li>
-                            <li><a href="#">Default</a></li>
-                            <li><a href="#">Default</a></li>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section class="footer-site">
-        <!-- Footer -->
-        <!-- Site footer -->
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="left">
-                        <div class="avatar">
-                        <!-- img avatar (JS) -->
-                        <img src="./images/default.jpg" alt="avatar-autor">
-                        </div>
-                        <p class="text-justify about" id="sobre">
-                            <!-- About Content (JS) -->
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                            book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-                            unchanged.
-                        </p>
-                        
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3">
-                        <h4>Categories</h4>
-                        <ul class="footer-links">
-                            <li><a href="https://www.java.com/pt-BR/">JAVA</a></li>
-                            <li><a href="https://spring.io/">Spring</a></li>
-                            <li><a href="https://angular.io/">Angular</a></li>
-                            <li><a href="https://www.php.net/">PHP</a></li>
-                            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">JS</a></li>
-                            <li><a href="https://getbootstrap.com/">Bootstap</a></li>
-                            <li><a href="https://nodejs.org/">NodeJS</a></li>
-                        </ul>
-                    </div>
+    <div class="social-menu">
+        <a href="https://www.linkedin.com/in/jaimedessilva" class="fa fa-linkedin"></a>
+        <a href="https://github.com/jaimedessilva" class="fa fa-github"></a>
+        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5561984496692" class="fa fa-whatsapp"></a>
+        <a href="#" class="fa fa-youtube"></a>
+    </div>
 
-                    <div class="col-xs-6 col-md-3" id="contatos">
-                        <h4>Social Media</h4>
-                        <!-- Add font awesome icons -->
-                        <div class="links-contato">
-                            <!-- Links (JS) -->
-                            <a href="#" class="fa fa-whatsapp"></a>
-                            <a href="#" class="fa fa-linkedin"></a>
-                            <a href="#" class="fa fa-github"></a>
-                            <a href="#" class="fa fa-google"></a>
-                            <a href="#" class="fa fa-youtube"></a>
-                            <a href="#" class="fa fa-android"></a>
-                            <a href="#" class="fa fa-reddit"></a>
-                            <a href="#" class="fa fa-rss"></a>
-                        </div> 
-                    </div>
-                </div>
-                <hr>
+    <header id="home">
+        <div class="left">
+            <!--  <img src="./images/ssj-dev.png" alt="Minha foto" /> -->
+            <h1 class="h1">SSJ. Dev</h1>
+            <h2>Jaime S Silva</h2>
+            <h1>Desenvolvedor FullStack</h1>
+            <h2>Skills: Java, JEE, Spring, Node,Javascript, Html, CSS, React-JS</h2>
+        </div>
+        <div class="right">
+            <img src="./images/programador-focado-amigavel.PNG" alt="Imagem ilustrativa" width="600">
+
+
+        </div>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <div id="img-perfil">
+            <div class="section-content">
+                <p id="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt
+                    ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
             </div>
-            <div class="container">
-                <div class="text-center">
-                    <div class="col-xs-12">
-                        <span class="align-center">Developed By ss<strong style="color: red">J.D</strong>ev</span>
-                         <br><br>
-                        <a href="http://www.freepik.com">Background: Designed by kjpargeter / Freepik</a>
-                    </div>
+            <!-- Professional Experience-->
+            <div class="container-exp">
+                <div class="card-context" id="exp-1">
+                    <h2>Exp 1</h2>
+                    <p>Lorem opop ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore.
+                    </p>
+                    <p>Lorem opop ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore.
+                    </p>
+                    <p>Lorem opop ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore.
+                    </p>
                 </div>
+                <div class="card-context" id="exp-2">
+                    <h2>Exp 2</h2>
+                    <p>Lorem opop ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore.
+                    </p>
+                    <p>Lorem opop ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore.
+                    </p>
+                    <p>Lorem opop ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore.
+                    </p>
+                </div>
+                <div class="card-context" id="exp-3">
+                    <h2>Exp 2</h2>
+                    <p>Lorem opop ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore.
+                    </p>
+                    <p>Lorem opop ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore.
+                    </p>
+                    <p>Lorem opop ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore.
+                    </p>
+                </div>
+                <!-- <div class="card-context" id="exp-3">
+                <h2>Exp 2</h2>
+                <p>Lorem opop ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                    labore.
+                </p>
+                <p>Lorem opop ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                    labore.
+                </p>
+                <p>Lorem opop ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                    labore.
+                </p>
+            </div> -->
             </div>
-        </footer>
-        <!--Footer-->
+
     </section>
-    <script>
-    </script>
-    <script src="./js/class/Url.js"></script>
-    <script src="./js/cardLinks.js"></script>
-    <script src="./js/links.js"></script>
-    <script src="./js/site.js"></script>
+
+    <section id="portfolio">
+        <h2>Projetos</h2>
+        <div id="container-cards" class="container-cards">
+
+            <div class="card">
+                <img src="./images/getapi.jpg" alt="Imagem do Card">
+                <h2>Card 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+                </p>
+                <button>Saiba Mais</button>
+                <!-- Cards serão injetados aqui -->
+            </div>
+    </section>
+    <section id="contato">
+
+        <div class="container-cards">
+
+            <div class="card-context" style="text-align: justify">
+                <h2 style="text-align: center;">Contato</h2>
+                <h3><i href="#" class="fa fa-phone-square"> (61) 98449-6692</i></h3>
+                <h3><i class="fa fa-envelope" aria-hidden="true"> jaimedessilva@gmail.com</i></h3>
+                <h3><i class="fa fa-linkedin-square" aria-hidden="true"> linkedin.com/in/jaimedessilva</i></h3>
+                <h3><i class="fa fa-github-square" aria-hidden="true"> github.com/jaimedessilva</i></h3>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SSj-Dev Todos os direitos reservados.</p>
+    </footer>
+    <script src="./components/cards.js"></script>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>
