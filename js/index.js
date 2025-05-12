@@ -4,13 +4,13 @@
  * Author: Jaime Dev
  * Repo: https://github.com/jaimedessilva
  */
+let menu = document.querySelector(".menu-ul");
+let linkResponsive = document.querySelector(".fechar");
 
 
 /* Menu Responsive */     
 function responsiveMenu() {
   "use strict";
-  let menu = document.querySelector(".menu-ul");
-
   if (menu.style.display === "block") {
       menu.style.display = "none";
   }
@@ -18,13 +18,17 @@ function responsiveMenu() {
       menu.style.display = "block";
   }
 }
-
-/* document.addEventListener("click", function (event) {
-  const menu = document.querySelector(".menu-ul");
-  if (!menu.contains(event.target) && !event.target.matches('.mobile') && menu.style.position === "absolute") {
+function closeMenu() {
+  "use strict";
+  if (menu.style.display === "block") {
+    //somente em enu mobile
+    let mobile = menu.style.position = "absolute";
+    //console.log("fechou menu")
+    if(menu.style.position === "absolute"){
       menu.style.display = "none";
+    }
   }
-}); */
+}
 
 /* Elementos a serem substituidos */
 function elementsSubscribe() {
